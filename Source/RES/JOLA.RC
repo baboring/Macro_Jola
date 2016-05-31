@@ -1,0 +1,403 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\jola.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "jola.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "jola 정보"
+FONT 9, "굴림"
+BEGIN
+    LTEXT           "오토마우스 졸라 버전 1.5",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1999",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,15,20,20
+END
+
+IDD_JOLA_DIALOG DIALOGEX 0, 0, 195, 149
+STYLE DS_ABSALIGN | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | 
+    WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT | WS_EX_APPWINDOW
+CAPTION "졸라빨라 v1.5  (바보링2)"
+FONT 9, "굴림"
+BEGIN
+    PUSHBUTTON      "Hide",IDC_BN_START,155,46,35,20
+    DEFPUSHBUTTON   "확인",IDOK,155,72,35,20,WS_DISABLED
+    PUSHBUTTON      "종료",IDCANCEL,155,96,35,20
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_SUNKEN | WS_BORDER,5,52,141,63,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    CTEXT           "오토마우스 졸라 v1.52 버젼",IDC_LABEL,5,5,185,31,
+                    SS_CENTERIMAGE,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER | WS_GROUP,0,45,
+                    150,75,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CTEXT           "문의처 : baboring@nownuri.net",IDC_STATIC,80,126,110,10,
+                    SS_CENTERIMAGE
+    CTEXT           "리니지 ID - 데포라쥬서버 : 바보링2",IDC_STATIC,70,136,
+                    120,10,SS_CENTERIMAGE
+END
+
+IDD_DLG_CONFIG DIALOGEX 0, 0, 169, 250
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "환경설정메뉴"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,10,203,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,65,203,50,14
+    COMBOBOX        IDC_CMB_STARTKEY,50,20,26,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_ENDKEY,125,20,26,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDT_AREA,55,65,22,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_TOGGLE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,73,65,8,12
+    COMBOBOX        IDC_CMB_TOGGLEKEY,117,95,27,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    SCROLLBAR       IDC_SCRSPEED,5,165,153,8
+    CTEXT           "빠르게",IDC_STATIC,5,155,27,8,SS_CENTERIMAGE
+    CTEXT           "느리게",IDC_STATIC,130,155,27,8,SS_CENTERIMAGE
+    CTEXT           "Start Key",IDC_STATIC,15,20,31,12,SS_CENTERIMAGE
+    CTEXT           "End Key",IDC_STATIC,90,20,31,12,SS_CENTERIMAGE
+    CTEXT           "토글 Key",IDC_LBL_TOGGLEKEY,80,98,31,8,SS_CENTERIMAGE
+    CTEXT           "토글반경",IDC_STATIC,15,65,40,12,SS_CENTERIMAGE,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "Toggle",IDC_STATIC,5,40,158,110
+    GROUPBOX        "AutoMouse",IDC_STATIC,5,0,155,38
+    EDITTEXT        IDC_EDT_LOOP,130,65,22,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_LOOP,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,148,65,8,
+                    12
+    CTEXT           "회전수",IDC_STATIC,89,65,41,12,SS_CENTERIMAGE,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "On/Off",IDC_CHK_SWITCH_AUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,10,41,12
+    CONTROL         "On/Off",IDC_CHK_SWITCH_TOGGLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,50,40,12
+    GROUPBOX        "키/마우스",IDC_STATIC,10,90,145,34
+    CONTROL         "Key",IDC_RAD_KEY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    15,98,35,8
+    CONTROL         "Mouse",IDC_RAD_MOUSE,"Button",BS_AUTORADIOBUTTON,15,113,
+                    35,8
+    CONTROL         "마우스 오른쪽 클릭",IDC_CHK_TOGGLE_MOUSECLICK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,80,113,62,8
+    GROUPBOX        "",IDC_STATIC,10,105,145,19
+    CONTROL         "Slider1",IDC_SLD_SPEED,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,5,183,158,19
+    CTEXT           "",IDC_TXT_SPEED,35,155,22,8,SS_CENTERIMAGE,
+                    WS_EX_CLIENTEDGE
+    SCROLLBAR       IDC_SCRSPEED2,65,130,88,8
+    CTEXT           "정확도",IDC_STATIC,10,130,27,8,SS_CENTERIMAGE
+    CTEXT           "",IDC_TXT_SPEED2,40,130,22,8,SS_CENTERIMAGE,
+                    WS_EX_CLIENTEDGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "jola MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "jola\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "jola.EXE\0"
+            VALUE "ProductName", "jola 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_JOLA_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_DLG_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP  DISCARDABLE     "logo01.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "babo"
+    BEGIN
+        MENUITEM "보기",                        IDC_VIEW_WINDOW
+        MENUITEM "종료",                        IDC_TRAY_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLG_CONFIG DLGINIT
+BEGIN
+    IDC_CMB_STARTKEY, 0x403, 3, 0
+0x3146, "\000" 
+    IDC_CMB_STARTKEY, 0x403, 3, 0
+0x3246, "\000" 
+    IDC_CMB_STARTKEY, 0x403, 3, 0
+0x3346, "\000" 
+    IDC_CMB_STARTKEY, 0x403, 3, 0
+0x3446, "\000" 
+    IDC_CMB_STARTKEY, 0x403, 3, 0
+0x3546, "\000" 
+    IDC_CMB_STARTKEY, 0x403, 3, 0
+0x3646, "\000" 
+    IDC_CMB_STARTKEY, 0x403, 3, 0
+0x3746, "\000" 
+    IDC_CMB_STARTKEY, 0x403, 3, 0
+0x3846, "\000" 
+    IDC_CMB_STARTKEY, 0x403, 3, 0
+0x3946, "\000" 
+    IDC_CMB_STARTKEY, 0x403, 4, 0
+0x3146, 0x0030, 
+    IDC_CMB_STARTKEY, 0x403, 4, 0
+0x3146, 0x0031, 
+    IDC_CMB_STARTKEY, 0x403, 4, 0
+0x3146, 0x0032, 
+    IDC_CMB_STARTKEY, 0x403, 19, 0
+0xb6b8, 0xecbf, 0xbabd, 0x4c20, 0x4645, 0x2054, 0x5542, 0x5454, 0x4e4f, 
+"\000" 
+    IDC_CMB_STARTKEY, 0x403, 20, 0
+0xb6b8, 0xecbf, 0xbabd, 0x5220, 0x4749, 0x5448, 0x4220, 0x5455, 0x4f54, 
+0x004e, 
+    IDC_CMB_ENDKEY, 0x403, 3, 0
+0x3146, "\000" 
+    IDC_CMB_ENDKEY, 0x403, 3, 0
+0x3246, "\000" 
+    IDC_CMB_ENDKEY, 0x403, 3, 0
+0x3346, "\000" 
+    IDC_CMB_ENDKEY, 0x403, 3, 0
+0x3446, "\000" 
+    IDC_CMB_ENDKEY, 0x403, 3, 0
+0x3546, "\000" 
+    IDC_CMB_ENDKEY, 0x403, 3, 0
+0x3646, "\000" 
+    IDC_CMB_ENDKEY, 0x403, 3, 0
+0x3746, "\000" 
+    IDC_CMB_ENDKEY, 0x403, 3, 0
+0x3846, "\000" 
+    IDC_CMB_ENDKEY, 0x403, 3, 0
+0x3946, "\000" 
+    IDC_CMB_ENDKEY, 0x403, 4, 0
+0x3146, 0x0030, 
+    IDC_CMB_ENDKEY, 0x403, 4, 0
+0x3146, 0x0031, 
+    IDC_CMB_ENDKEY, 0x403, 4, 0
+0x3146, 0x0032, 
+    IDC_CMB_ENDKEY, 0x403, 19, 0
+0xb6b8, 0xecbf, 0xbabd, 0x4c20, 0x4645, 0x2054, 0x5542, 0x5454, 0x4e4f, 
+"\000" 
+    IDC_CMB_ENDKEY, 0x403, 20, 0
+0xb6b8, 0xecbf, 0xbabd, 0x5220, 0x4749, 0x5448, 0x4220, 0x5455, 0x4f54, 
+0x004e, 
+    IDC_CMB_TOGGLEKEY, 0x403, 3, 0
+0x3146, "\000" 
+    IDC_CMB_TOGGLEKEY, 0x403, 3, 0
+0x3246, "\000" 
+    IDC_CMB_TOGGLEKEY, 0x403, 3, 0
+0x3346, "\000" 
+    IDC_CMB_TOGGLEKEY, 0x403, 3, 0
+0x3446, "\000" 
+    IDC_CMB_TOGGLEKEY, 0x403, 3, 0
+0x3546, "\000" 
+    IDC_CMB_TOGGLEKEY, 0x403, 3, 0
+0x3646, "\000" 
+    IDC_CMB_TOGGLEKEY, 0x403, 3, 0
+0x3746, "\000" 
+    IDC_CMB_TOGGLEKEY, 0x403, 3, 0
+0x3846, "\000" 
+    IDC_CMB_TOGGLEKEY, 0x403, 3, 0
+0x3946, "\000" 
+    IDC_CMB_TOGGLEKEY, 0x403, 4, 0
+0x3146, 0x0030, 
+    IDC_CMB_TOGGLEKEY, 0x403, 4, 0
+0x3146, 0x0031, 
+    IDC_CMB_TOGGLEKEY, 0x403, 4, 0
+0x3146, 0x0032, 
+    IDC_CMB_TOGGLEKEY, 0x403, 12, 0
+0xb6b8, 0xecbf, 0xbabd, 0xb920, 0xc6f6, 0x00b0, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "jola 정보(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "jola.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

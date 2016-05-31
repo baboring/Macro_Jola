@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: jola - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/jola.res" /d "NDEBUG" "P:\Project Master\project ÀÛ¾÷½Ç\Á¹¶ó»¡¶ó\JOLA_v155a\jola.rc"" 
+Creating temporary file "C:\DOCUME~1\BABORI~1.ARE\LOCALS~1\Temp\RSPB86.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/jola.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"P:\Project Master\project ÀÛ¾÷½Ç\Á¹¶ó»¡¶ó\JOLA_v155a\DlgAccuracy.cpp"
+"P:\Project Master\project ÀÛ¾÷½Ç\Á¹¶ó»¡¶ó\JOLA_v155a\DlgConfig.cpp"
+"P:\Project Master\project ÀÛ¾÷½Ç\Á¹¶ó»¡¶ó\JOLA_v155a\DlgToggle.cpp"
+"P:\Project Master\project ÀÛ¾÷½Ç\Á¹¶ó»¡¶ó\JOLA_v155a\jola.cpp"
+"P:\Project Master\project ÀÛ¾÷½Ç\Á¹¶ó»¡¶ó\JOLA_v155a\jolaDlg.cpp"
+"P:\Project Master\project ÀÛ¾÷½Ç\Á¹¶ó»¡¶ó\JOLA_v155a\tray.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\BABORI~1.ARE\LOCALS~1\Temp\RSPB86.tmp" 
+Creating temporary file "C:\DOCUME~1\BABORI~1.ARE\LOCALS~1\Temp\RSPB87.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/jola.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"P:\Project Master\project ÀÛ¾÷½Ç\Á¹¶ó»¡¶ó\JOLA_v155a\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\BABORI~1.ARE\LOCALS~1\Temp\RSPB87.tmp" 
+Creating temporary file "C:\DOCUME~1\BABORI~1.ARE\LOCALS~1\Temp\RSPB88.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/jola.pdb" /machine:I386 /out:"work/jola.exe" 
+".\Release\DlgAccuracy.obj"
+".\Release\DlgConfig.obj"
+".\Release\DlgToggle.obj"
+".\Release\jola.obj"
+".\Release\jolaDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\tray.obj"
+".\Release\jola.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\BABORI~1.ARE\LOCALS~1\Temp\RSPB88.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DlgAccuracy.cpp
+DlgConfig.cpp
+DlgToggle.cpp
+jola.cpp
+jolaDlg.cpp
+P:\Project Master\project ÀÛ¾÷½Ç\Á¹¶ó»¡¶ó\JOLA_v155a\jolaDlg.cpp(475) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+P:\Project Master\project ÀÛ¾÷½Ç\Á¹¶ó»¡¶ó\JOLA_v155a\jolaDlg.cpp(482) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+P:\Project Master\project ÀÛ¾÷½Ç\Á¹¶ó»¡¶ó\JOLA_v155a\jolaDlg.cpp(537) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+tray.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+jola.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>
